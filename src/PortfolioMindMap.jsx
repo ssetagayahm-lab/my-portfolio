@@ -108,7 +108,9 @@ const NODES = [
   en: "FLYER",
   code: "FL.04",
   sub: "フライヤー / グラフィックデザイン",
-  photos: [
+    angle: 30,
+accent: ["#8c4a8c", "#c79bc7"],
+ photos: [
   { caption: "チラシデザイン 01", src: "/images/flyer01.jpg" },
   { caption: "チラシデザイン 02" },
   { caption: "チラシデザイン 03" },
