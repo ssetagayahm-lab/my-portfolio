@@ -29,7 +29,7 @@ const NODES = [
     label: "電気工事",
     en: "ELECTRICAL WORK",
     code: "EW.01",
-    sub: "テナント電気工事"
+    sub: "テナント電気工事",
   angle: 90,
     accent: ["#c45a2c", "#3a3a3a"],
     photos: [ 
