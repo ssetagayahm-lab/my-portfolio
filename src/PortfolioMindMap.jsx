@@ -127,7 +127,7 @@ const NODES = [
 // 登録した写真の枚数に応じて四角のサイズを決める
 
 
-const MAX_NODE_SIZE = Math.max(...NODES.map(nodeSize));
+
 
 // ── レコードラベル風スクエア ────────────────────────────────
 const BASE_SIZE = 40; // 写真が最少の項目のサイズ
@@ -140,7 +140,7 @@ function nodeSize(n) {
     BASE_SIZE + (n.photos.length - MIN_PHOTO_COUNT) * SIZE_STEP
   );
 }
-
+const MAX_NODE_SIZE = Math.max(...NODES.map(nodeSize));
 
 function VinylLabel({ size = 96, node, isCenter = false }) {
   const inset = size * 0.07;
