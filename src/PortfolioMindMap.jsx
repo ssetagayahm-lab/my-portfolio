@@ -132,7 +132,7 @@ const NODES = [
 // ── レコードラベル風スクエア ────────────────────────────────
 const BASE_SIZE = 40; // 写真が最少の項目のサイズ
 const SIZE_STEP = 7; // 写真1枚増えるごとに大きくなる量
-const MAX_SIZE = BASE_SIZE * 4; // 最大でも基準サイズの4倍まで
+const MAX_SIZE = BASE_SIZE * 3; // 最でも基準サイズの4倍まで
 const MIN_PHOTO_COUNT = Math.min(...NODES.map((n) => n.photos.length));
 function nodeSize(n) {
   return Math.min(
