@@ -555,7 +555,10 @@ export default function PortfolioMindMap() {
                 gap: 10,
                 position: "relative",
                 overflow: "hidden",
-              }}{/* 左端タップ：前の写真へ */}
+              }}
+>
+{/* 左端タップ：前の写真へ */}
+
 <button
   onClick={() =>
     setPhotoIndex(
