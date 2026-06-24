@@ -555,7 +555,46 @@ export default function PortfolioMindMap() {
                 gap: 10,
                 position: "relative",
                 overflow: "hidden",
-              }}
+              }}{/* 左端タップ：前の写真へ */}
+<button
+  onClick={() =>
+    setPhotoIndex(
+      (photoIndex - 1 + activeNode.photos.length) %
+        activeNode.photos.length
+    )
+  }
+  aria-label="前の写真"
+  style={{
+    position: "absolute",
+    left: 0,
+    top: 0,
+    width: "30%",
+    height: "100%",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    zIndex: 2,
+  }}
+/>
+{/* 右端タップ：次の写真へ */}
+<button
+  onClick={() =>
+    setPhotoIndex((photoIndex + 1) % activeNode.photos.length)
+  }
+  aria-label="次の写真"
+  style={{
+    position: "absolute",
+    right: 0,
+    top: 0,
+    width: "30%",
+    height: "100%",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    zIndex: 2,
+  }}
+/>
+
             >
               {activeNode.type === "audio" ? (
                 // ── 音楽データ：実ファイルがあれば <audio> プレイヤーを表示 ──
