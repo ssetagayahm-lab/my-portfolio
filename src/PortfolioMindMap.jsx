@@ -32,7 +32,7 @@ const NODES = [
     sub: "商業テナント電気工事 / 一級電気工事士",
     angle: 90,
     accent: ["#c45a2c", "#3a3a3a"],
-    photos: [photos: [
+    photos: [ 
   { caption: "電気工事 01", src: "/images/IMG_0004.jpeg" },
   { caption: "電気工事 02", src: "/images/IMG_0005.jpeg" },
   { caption: "電気工事 03", src: "/images/IMG_0374.jpeg" },
@@ -63,9 +63,7 @@ const NODES = [
   { caption: "電気工事 28", src: "/images/IMG_8172.jpeg" },
 ],
 
-      { caption: "店舗内 配線計画", src: "/images/electric-01.jpg" },
-      { caption: "分電盤 施工", src: "/images/electric-02.jpg" },
-      { caption: "照明回路 検証", src: "/images/electric-03.jpg" },
+
     ],
   },
   {
