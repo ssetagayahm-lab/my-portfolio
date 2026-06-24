@@ -64,7 +64,6 @@ const NODES = [
 ],
 
 
-    ],
   },
   {
     id: "space",
