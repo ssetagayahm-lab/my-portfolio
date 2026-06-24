@@ -232,8 +232,7 @@ export default function PortfolioMindMap() {
 
   function nodePos(angle, sz) {
     const rad = (angle * Math.PI) / 180;
-    const r = Math.max(radius * 0.35, radius + (sz ? (sz - MAX_NODE_SIZE) * 2.6 : 0));
-
+    const r = Math.max(radius * 0.6, radius + (sz ? (sz - MAX_NODE_SIZE) * 1.2 : 0));
     const padX = (sz || 60) / 2 + 30; // 四角＋ラベル分の余白
     const padY = (sz || 60) / 2 + 30;
     const x = Math.min(dims.w - padX, Math.max(padX, cx + r * Math.cos(rad)));
