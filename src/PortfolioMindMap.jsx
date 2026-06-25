@@ -551,7 +551,8 @@ export default function PortfolioMindMap() {
                 border: `2px solid ${RING}`,
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "center",
+                justifyContent: "flex-start",
+
                 flexDirection: "column",
                 gap: 10,
                 position: "relative",
