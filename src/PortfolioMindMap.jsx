@@ -30,63 +30,59 @@ const NODES = [
     en: "ELECTRICAL WORK",
     code: "EW.01",
     sub: "テナント電気工事",
-  angle: 90,
+    angle: 90,
     accent: ["#c45a2c", "#3a3a3a"],
-    photos: [ 
-  { caption: "電気工事 01", src: "/images/IMG_0004.jpeg" },
-  { caption: "電気工事 02", src: "/images/IMG_0005.jpeg" },
-  { caption: "電気工事 03", src: "/images/IMG_0374.jpeg" },
-  { caption: "電気工事 04", src: "/images/IMG_0375.jpeg" },
-  { caption: "電気工事 05", src: "/images/IMG_0947.jpeg" },
-  { caption: "電気工事 06", src: "/images/IMG_0949.jpeg" },
-  { caption: "電気工事 07", src: "/images/IMG_0978.jpeg" },
-  { caption: "電気工事 08", src: "/images/IMG_1138.jpeg" },
-  { caption: "電気工事 09", src: "/images/IMG_1141.jpeg" },
-  { caption: "電気工事 10", src: "/images/IMG_1156.jpeg" },
-  { caption: "電気工事 11", src: "/images/IMG_1159.jpeg" },
-  { caption: "電気工事 12", src: "/images/IMG_1161.jpeg" },
-  { caption: "電気工事 13", src: "/images/IMG_1162.jpeg" },
-  { caption: "電気工事 14", src: "/images/IMG_1170.jpeg" },
-  { caption: "電気工事 15", src: "/images/IMG_1172.jpeg" },
-  { caption: "電気工事 16", src: "/images/IMG_1173.jpeg" },
-  { caption: "電気工事 17", src: "/images/IMG_1174.jpeg" },
-  { caption: "電気工事 18", src: "/images/IMG_1178.jpeg" },
-  { caption: "電気工事 19", src: "/images/IMG_1183.jpeg" },
-  { caption: "電気工事 20", src: "/images/IMG_1185.jpeg" },
-  { caption: "電気工事 21", src: "/images/IMG_1187.jpeg" },
-  { caption: "電気工事 22", src: "/images/IMG_1192.jpeg" },
-  { caption: "電気工事 23", src: "/images/IMG_1413.jpeg" },
-  { caption: "電気工事 24", src: "/images/IMG_1417.jpeg" },
-  { caption: "電気工事 25", src: "/images/IMG_6634.jpeg" },
-  { caption: "電気工事 26", src: "/images/IMG_7737.jpeg" },
-  { caption: "電気工事 27", src: "/images/IMG_7739.jpeg" },
-  { caption: "電気工事 28", src: "/images/IMG_8172.jpeg" } ,
+    photos: [
+      { caption: "電気工事 01", src: "/images/IMG_0004.jpeg" },
+      { caption: "電気工事 02", src: "/images/IMG_0005.jpeg" },
+      { caption: "電気工事 03", src: "/images/IMG_0374.jpeg" },
+      { caption: "電気工事 04", src: "/images/IMG_0375.jpeg" },
+      { caption: "電気工事 05", src: "/images/IMG_0947.jpeg" },
+      { caption: "電気工事 06", src: "/images/IMG_0949.jpeg" },
+      { caption: "電気工事 07", src: "/images/IMG_0978.jpeg" },
+      { caption: "電気工事 08", src: "/images/IMG_1138.jpeg" },
+      { caption: "電気工事 09", src: "/images/IMG_1141.jpeg" },
+      { caption: "電気工事 10", src: "/images/IMG_1156.jpeg" },
+      { caption: "電気工事 11", src: "/images/IMG_1159.jpeg" },
+      { caption: "電気工事 12", src: "/images/IMG_1161.jpeg" },
+      { caption: "電気工事 13", src: "/images/IMG_1162.jpeg" },
+      { caption: "電気工事 14", src: "/images/IMG_1170.jpeg" },
+      { caption: "電気工事 15", src: "/images/IMG_1172.jpeg" },
+      { caption: "電気工事 16", src: "/images/IMG_1173.jpeg" },
+      { caption: "電気工事 17", src: "/images/IMG_1174.jpeg" },
+      { caption: "電気工事 18", src: "/images/IMG_1178.jpeg" },
+      { caption: "電気工事 19", src: "/images/IMG_1183.jpeg" },
+      { caption: "電気工事 20", src: "/images/IMG_1185.jpeg" },
+      { caption: "電気工事 21", src: "/images/IMG_1187.jpeg" },
+      { caption: "電気工事 22", src: "/images/IMG_1192.jpeg" },
+      { caption: "電気工事 23", src: "/images/IMG_1413.jpeg" },
+      { caption: "電気工事 24", src: "/images/IMG_1417.jpeg" },
+      { caption: "電気工事 25", src: "/images/IMG_6634.jpeg" },
+      { caption: "電気工事 26", src: "/images/IMG_7737.jpeg" },
+      { caption: "電気工事 27", src: "/images/IMG_7739.jpeg" },
+      { caption: "電気工事 28", src: "/images/IMG_8172.jpeg" },
       { caption: "電気工事 29", src: "/images/IMG_0018.jpeg" },
-  { caption: "電気工事 30", src: "/images/IMG_0136.jpeg" },
-  { caption: "電気工事 31", src: "/images/IMG_0138.jpeg" },
-  { caption: "電気工事 32", src: "/images/IMG_0189.jpeg" },
-  { caption: "電気工事 33", src: "/images/IMG_0198.jpeg" },
-  { caption: "電気工事 34", src: "/images/IMG_0204.jpeg" },
-  { caption: "電気工事 35", src: "/images/IMG_0206.jpeg" },
-  { caption: "電気工事 36", src: "/images/IMG_0400.jpeg" },
-  { caption: "電気工事 37", src: "/images/IMG_0401.jpeg" },
-  { caption: "電気工事 38", src: "/images/IMG_3511.jpeg" },
-  { caption: "電気工事 39", src: "/images/IMG_3757.jpeg" },
-  { caption: "電気工事 40", src: "/images/IMG_3801.jpeg" },
-  { caption: "電気工事 41", src: "/images/IMG_3802.jpeg" },
-  { caption: "電気工事 42", src: "/images/IMG_4132.jpeg" },
-  { caption: "電気工事 43", src: "/images/IMG_4135.jpeg" },
-  { caption: "電気工事 44", src: "/images/IMG_4136.jpeg" },
-  { caption: "電気工事 45", src: "/images/IMG_4832.jpeg" },
-  { caption: "電気工事 46", src: "/images/IMG_4839.jpeg" },
-  { caption: "電気工事 47", src: "/images/IMG_4843.jpeg" },
-  { caption: "電気工事 48", src: "/images/IMG_5213.jpeg" },
-  { caption: "電気工事 49", src: "/images/IMG_5248.jpeg" },
-
-      
-],
-
-
+      { caption: "電気工事 30", src: "/images/IMG_0136.jpeg" },
+      { caption: "電気工事 31", src: "/images/IMG_0138.jpeg" },
+      { caption: "電気工事 32", src: "/images/IMG_0189.jpeg" },
+      { caption: "電気工事 33", src: "/images/IMG_0198.jpeg" },
+      { caption: "電気工事 34", src: "/images/IMG_0204.jpeg" },
+      { caption: "電気工事 35", src: "/images/IMG_0206.jpeg" },
+      { caption: "電気工事 36", src: "/images/IMG_0400.jpeg" },
+      { caption: "電気工事 37", src: "/images/IMG_0401.jpeg" },
+      { caption: "電気工事 38", src: "/images/IMG_3511.jpeg" },
+      { caption: "電気工事 39", src: "/images/IMG_3757.jpeg" },
+      { caption: "電気工事 40", src: "/images/IMG_3801.jpeg" },
+      { caption: "電気工事 41", src: "/images/IMG_3802.jpeg" },
+      { caption: "電気工事 42", src: "/images/IMG_4132.jpeg" },
+      { caption: "電気工事 43", src: "/images/IMG_4135.jpeg" },
+      { caption: "電気工事 44", src: "/images/IMG_4136.jpeg" },
+      { caption: "電気工事 45", src: "/images/IMG_4832.jpeg" },
+      { caption: "電気工事 46", src: "/images/IMG_4839.jpeg" },
+      { caption: "電気工事 47", src: "/images/IMG_4843.jpeg" },
+      { caption: "電気工事 48", src: "/images/IMG_5213.jpeg" },
+      { caption: "電気工事 49", src: "/images/IMG_5248.jpeg" },
+    ],
   },
   {
     id: "space",
@@ -103,20 +99,19 @@ const NODES = [
     ],
   },
   {
-  id: "flyer",
-  label: "Flyer",
-  en: "FLYER",
-  code: "FL.04",
-  sub: "フライヤー / グラフィックデザイン",
+    id: "flyer",
+    label: "Flyer",
+    en: "FLYER",
+    code: "FL.04",
+    sub: "フライヤー / グラフィックデザイン",
     angle: 30,
-accent: ["#8c4a8c", "#c79bc7"],
- photos: [
-  { caption: "チラシデザイン 01", src: "/images/flyer01.JPG" },
-  { caption: "チラシデザイン 02" },
-  { caption: "チラシデザイン 03" },
-],
-
-},
+    accent: ["#8c4a8c", "#c79bc7"],
+    photos: [
+      { caption: "チラシデザイン 01", src: "/images/flyer01.JPG" },
+      { caption: "チラシデザイン 02" },
+      { caption: "チラシデザイン 03" },
+    ],
+  },
   {
     id: "av",
     label: "Installation",
@@ -149,14 +144,9 @@ accent: ["#8c4a8c", "#c79bc7"],
 ];
 
 // 登録した写真の枚数に応じて四角のサイズを決める
-
-
-
-
-// ── レコードラベル風スクエア ────────────────────────────────
 const BASE_SIZE = 40; // 写真が最少の項目のサイズ
 const SIZE_STEP = 7; // 写真1枚増えるごとに大きくなる量
-const MAX_SIZE = BASE_SIZE * 3; // 最でも基準サイズの4倍まで
+const MAX_SIZE = BASE_SIZE * 3; // 最大でも基準サイズの3倍まで
 const MIN_PHOTO_COUNT = Math.min(...NODES.map((n) => n.photos.length));
 function nodeSize(n) {
   return Math.min(
@@ -166,6 +156,7 @@ function nodeSize(n) {
 }
 const MAX_NODE_SIZE = Math.max(...NODES.map(nodeSize));
 
+// ── レコードラベル風スクエア ────────────────────────────────
 function VinylLabel({ size = 96, node, isCenter = false }) {
   const inset = size * 0.07;
   const holeSize = size * 0.09;
@@ -256,11 +247,17 @@ export default function PortfolioMindMap() {
 
   function nodePos(angle, sz) {
     const rad = (angle * Math.PI) / 180;
-    const r = Math.max(radius * 0.6, radius + (sz ? (sz - MAX_NODE_SIZE) * 1.2 : 0));
+    const r = Math.max(
+      radius * 0.6,
+      radius + (sz ? (sz - MAX_NODE_SIZE) * 1.2 : 0)
+    );
     const padX = (sz || 60) / 2 + 30; // 四角＋ラベル分の余白
     const padY = (sz || 60) / 2 + 30;
     const x = Math.min(dims.w - padX, Math.max(padX, cx + r * Math.cos(rad)));
-    const y = Math.min(dims.h - padY, Math.max(padY + 30, cy + r * Math.sin(rad)));
+    const y = Math.min(
+      dims.h - padY,
+      Math.max(padY + 30, cy + r * Math.sin(rad))
+    );
     return { x, y };
   }
 
@@ -283,7 +280,8 @@ export default function PortfolioMindMap() {
         width: "100%",
         height: "100vh",
         background: CREAM,
-        fontFamily: "'Iowan Old Style','Georgia','Hiragino Mincho ProN',serif",
+        fontFamily:
+          "'Iowan Old Style','Georgia','Hiragino Mincho ProN',serif",
         position: "relative",
         overflow: "hidden",
         color: INK,
@@ -440,8 +438,8 @@ export default function PortfolioMindMap() {
                     color: "#9a9484",
                   }}
                 >
-                {n.code}
-              </span>
+                  {n.code}
+                </span>
               </div>
             </button>
           );
@@ -512,7 +510,9 @@ export default function PortfolioMindMap() {
             </button>
             <VinylLabel size={46} node={activeNode} />
             <div>
-              <div style={{ fontSize: 9.5, letterSpacing: 2, color: "#9a9484" }}>
+              <div
+                style={{ fontSize: 9.5, letterSpacing: 2, color: "#9a9484" }}
+              >
                 {activeNode.en} · {activeNode.code}
               </div>
               <div
@@ -541,9 +541,9 @@ export default function PortfolioMindMap() {
               gap: 20,
               padding: 24,
             }}
-  
+          >
             <div
-                         style={{
+              style={{
                 width: "min(72vw, 340px)",
                 height: "min(102vw, 480px)",
                 maxHeight: "72vh",
@@ -563,43 +563,41 @@ export default function PortfolioMindMap() {
                 onClick={() =>
                   setPhotoIndex(
                     (photoIndex - 1 + activeNode.photos.length) %
+                      activeNode.photos.length
+                  )
+                }
+                aria-label="前の写真"
+                style={{
+                  position: "absolute",
+                  left: 0,
+                  top: 0,
+                  width: "30%",
+                  height: "100%",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  zIndex: 2,
+                }}
+              />
+              {/* 右端タップ：次の写真へ */}
+              <button
+                onClick={() =>
+                  setPhotoIndex((photoIndex + 1) % activeNode.photos.length)
+                }
+                aria-label="次の写真"
+                style={{
+                  position: "absolute",
+                  right: 0,
+                  top: 0,
+                  width: "30%",
+                  height: "100%",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  zIndex: 2,
+                }}
+              />
 
-        activeNode.photos.length
-    )
-  }
-  aria-label="前の写真"
-  style={{
-    position: "absolute",
-    left: 0,
-    top: 0,
-    width: "30%",
-    height: "100%",
-    background: "none",
-    border: "none",
-    cursor: "pointer",
-    zIndex: 2,
-  }}
-/>
-{/* 右端タップ：次の写真へ */}
-<button
-  onClick={() =>
-    setPhotoIndex((photoIndex + 1) % activeNode.photos.length)
-  }
-  aria-label="次の写真"
-  style={{
-    position: "absolute",
-    right: 0,
-    top: 0,
-    width: "30%",
-    height: "100%",
-    background: "none",
-    border: "none",
-    cursor: "pointer",
-    zIndex: 2,
-  }}
-/>
-
-            >
               {activeNode.type === "audio" ? (
                 // ── 音楽データ：実ファイルがあれば <audio> プレイヤーを表示 ──
                 <div
@@ -717,7 +715,9 @@ export default function PortfolioMindMap() {
               ))}
             </div>
 
-            <div style={{ fontSize: 10.5, color: "#9a9484", letterSpacing: 1 }}>
+            <div
+              style={{ fontSize: 10.5, color: "#9a9484", letterSpacing: 1 }}
+            >
               {String(photoIndex + 1).padStart(2, "0")} /{" "}
               {String(activeNode.photos.length).padStart(2, "0")}
             </div>
