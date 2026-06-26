@@ -541,30 +541,29 @@ export default function PortfolioMindMap() {
               gap: 20,
               padding: 24,
             }}
-          >
+  
             <div
-              style={{
-                width: "min(78vw, 380px)",
-                height: "min(78vw, 380px)",
-                maxHeight: "48vh",
+                         style={{
+                width: "min(72vw, 340px)",
+                height: "min(102vw, 480px)",
+                maxHeight: "72vh",
                 borderRadius: 8,
                 border: `2px solid ${RING}`,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "flex-start",
-
                 flexDirection: "column",
                 gap: 10,
                 position: "relative",
                 overflow: "hidden",
               }}
->
-{/* 左端タップ：前の写真へ */}
+            >
+              {/* 左端タップ：前の写真へ */}
+              <button
+                onClick={() =>
+                  setPhotoIndex(
+                    (photoIndex - 1 + activeNode.photos.length) %
 
-<button
-  onClick={() =>
-    setPhotoIndex(
-      (photoIndex - 1 + activeNode.photos.length) %
         activeNode.photos.length
     )
   }
