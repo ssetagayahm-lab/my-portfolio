@@ -93,10 +93,12 @@ const NODES = [
     angle: 150,
     accent: ["#5a6e8c", "#9aa6b5"],
     photos: [
-      { caption: "色彩実験レポート", src: "/images/space-01.jpg" },
-      { caption: "空間構成 ドローイング", src: "/images/space-02.jpg" },
-      { caption: "課題2-2 提出物", src: "/images/space-03.jpg" },
-    ],
+  { caption: "光景 01", src: "/images/space-01.jpg" },
+  { caption: "光景 02", src: "/images/space-02.jpg" },
+  { caption: "光景 03", src: "/images/space-03.jpg" },
+  { caption: "光景 04", src: "/images/新しいファイル名" },
+  { caption: "光景 05", src: "/images/新しいファイル名" },
+],
   },
   {
     id: "flyer",
