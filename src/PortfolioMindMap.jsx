@@ -89,7 +89,7 @@ const NODES = [
     label: "光景",
     en: "SCENERY",
     code: "LS.02",
-    sub: "空間デザイン学科 課題作品",
+    sub: "光と影の記録",
     angle: 150,
     accent: ["#5a6e8c", "#9aa6b5"],
     photos: [
