@@ -33,55 +33,34 @@ const NODES = [
     angle: 90,
     accent: ["#c45a2c", "#3a3a3a"],
     photos: [
-      { caption: "電気工事 01", src: "/images/IMG_0004.jpeg" },
-      { caption: "電気工事 02", src: "/images/IMG_0005.jpeg" },
-      { caption: "電気工事 03", src: "/images/IMG_0374.jpeg" },
-      { caption: "電気工事 04", src: "/images/IMG_0375.jpeg" },
-      { caption: "電気工事 05", src: "/images/IMG_0947.jpeg" },
-      { caption: "電気工事 06", src: "/images/IMG_0949.jpeg" },
-      { caption: "電気工事 07", src: "/images/IMG_0978.jpeg" },
-      { caption: "電気工事 08", src: "/images/IMG_1138.jpeg" },
-      { caption: "電気工事 09", src: "/images/IMG_1141.jpeg" },
-      { caption: "電気工事 10", src: "/images/IMG_1156.jpeg" },
-      { caption: "電気工事 11", src: "/images/IMG_1159.jpeg" },
-      { caption: "電気工事 12", src: "/images/IMG_1161.jpeg" },
-      { caption: "電気工事 13", src: "/images/IMG_1162.jpeg" },
-      { caption: "電気工事 14", src: "/images/IMG_1170.jpeg" },
-      { caption: "電気工事 15", src: "/images/IMG_1172.jpeg" },
-      { caption: "電気工事 16", src: "/images/IMG_1173.jpeg" },
-      { caption: "電気工事 17", src: "/images/IMG_1174.jpeg" },
-      { caption: "電気工事 18", src: "/images/IMG_1178.jpeg" },
-      { caption: "電気工事 19", src: "/images/IMG_1183.jpeg" },
-      { caption: "電気工事 20", src: "/images/IMG_1185.jpeg" },
-      { caption: "電気工事 21", src: "/images/IMG_1187.jpeg" },
-      { caption: "電気工事 22", src: "/images/IMG_1192.jpeg" },
-      { caption: "電気工事 23", src: "/images/IMG_1413.jpeg" },
-      { caption: "電気工事 24", src: "/images/IMG_1417.jpeg" },
-      { caption: "電気工事 25", src: "/images/IMG_6634.jpeg" },
-      { caption: "電気工事 26", src: "/images/IMG_7737.jpeg" },
-      { caption: "電気工事 27", src: "/images/IMG_7739.jpeg" },
-      { caption: "電気工事 28", src: "/images/IMG_8172.jpeg" },
-      { caption: "電気工事 29", src: "/images/IMG_0018.jpeg" },
-      { caption: "電気工事 30", src: "/images/IMG_0136.jpeg" },
-      { caption: "電気工事 31", src: "/images/IMG_0138.jpeg" },
-      { caption: "電気工事 32", src: "/images/IMG_0189.jpeg" },
-      { caption: "電気工事 33", src: "/images/IMG_0198.jpeg" },
-      { caption: "電気工事 34", src: "/images/IMG_0204.jpeg" },
-      { caption: "電気工事 35", src: "/images/IMG_0206.jpeg" },
-      { caption: "電気工事 36", src: "/images/IMG_0400.jpeg" },
-      { caption: "電気工事 37", src: "/images/IMG_0401.jpeg" },
-      { caption: "電気工事 38", src: "/images/IMG_3511.jpeg" },
-      { caption: "電気工事 39", src: "/images/IMG_3757.jpeg" },
-      { caption: "電気工事 40", src: "/images/IMG_3801.jpeg" },
-      { caption: "電気工事 41", src: "/images/IMG_3802.jpeg" },
-      { caption: "電気工事 42", src: "/images/IMG_4132.jpeg" },
-      { caption: "電気工事 43", src: "/images/IMG_4135.jpeg" },
-      { caption: "電気工事 44", src: "/images/IMG_4136.jpeg" },
-      { caption: "電気工事 45", src: "/images/IMG_4832.jpeg" },
-      { caption: "電気工事 46", src: "/images/IMG_4839.jpeg" },
-      { caption: "電気工事 47", src: "/images/IMG_4843.jpeg" },
-      { caption: "電気工事 48", src: "/images/IMG_5213.jpeg" },
-      { caption: "電気工事 49", src: "/images/IMG_5248.jpeg" },
+      { caption: "電気工事 01", src: "/images/IMG_0140.jpeg" },
+      { caption: "電気工事 02", src: "/images/IMG_0791.jpeg" },
+      { caption: "電気工事 03", src: "/images/IMG_0866.jpeg" },
+      { caption: "電気工事 04", src: "/images/IMG_0869.jpeg" },
+      { caption: "電気工事 05", src: "/images/IMG_0870.jpeg" },
+      { caption: "電気工事 06", src: "/images/IMG_1139.jpeg" },
+      { caption: "電気工事 07", src: "/images/IMG_1163.jpeg" },
+      { caption: "電気工事 08", src: "/images/IMG_1412.jpeg" },
+      { caption: "電気工事 09", src: "/images/IMG_2136.jpeg" },
+      { caption: "電気工事 10", src: "/images/IMG_2141.jpeg" },
+      { caption: "電気工事 11", src: "/images/IMG_2910.jpeg" },
+      { caption: "電気工事 12", src: "/images/IMG_3198.jpeg" },
+      { caption: "電気工事 13", src: "/images/IMG_3202.jpeg" },
+      { caption: "電気工事 14", src: "/images/IMG_3203.jpeg" },
+      { caption: "電気工事 15", src: "/images/IMG_3510.jpeg" },
+      { caption: "電気工事 16", src: "/images/IMG_3538.jpeg" },
+      { caption: "電気工事 17", src: "/images/IMG_4036.jpeg" },
+      { caption: "電気工事 18", src: "/images/IMG_4134.jpeg" },
+      { caption: "電気工事 19", src: "/images/IMG_4138.jpeg" },
+      { caption: "電気工事 20", src: "/images/IMG_4296.jpeg" },
+      { caption: "電気工事 21", src: "/images/IMG_4297.jpeg" },
+      { caption: "電気工事 22", src: "/images/IMG_4302.jpeg" },
+      { caption: "電気工事 23", src: "/images/IMG_4567.jpeg" },
+      { caption: "電気工事 24", src: "/images/IMG_4647.jpeg" },
+      { caption: "電気工事 25", src: "/images/IMG_4739.jpeg" },
+      { caption: "電気工事 26", src: "/images/IMG_4833.jpeg" },
+      { caption: "電気工事 27", src: "/images/IMG_4854.jpeg" },
+      { caption: "電気工事 28", src: "/images/IMG_4855.jpeg" },
     ],
   },
   {
@@ -93,14 +72,14 @@ const NODES = [
     angle: 150,
     accent: ["#5a6e8c", "#9aa6b5"],
     photos: [
-  { caption: "光景 01", src: "/images/R0014544.jpeg" },
-  { caption: "光景 02", src: "/images/IMG_4029.jpeg" },
-  { caption: "光景 03", src: "/images/IMG_4554.jpeg" },
-  { caption: "光景 04", src: "/images/IMG_4646.jpeg" },
-  { caption: "光景 05", src: "/images/IMG_4135.jpeg" },
-  { caption: "光景 06", src: "/images/IMG_5488.jpeg" },
-  { caption: "光景 07", src: "/images/IMG_5498.jpeg" },
-],
+      { caption: "光景 01", src: "/images/R0014544.jpeg" },
+      { caption: "光景 02", src: "/images/IMG_4029.jpeg" },
+      { caption: "光景 03", src: "/images/IMG_4554.jpeg" },
+      { caption: "光景 04", src: "/images/IMG_4646.jpeg" },
+      { caption: "光景 05", src: "/images/IMG_4135.jpeg" },
+      { caption: "光景 06", src: "/images/IMG_5488.jpeg" },
+      { caption: "光景 07", src: "/images/IMG_5498.jpeg" },
+    ],
   },
   {
     id: "flyer",
@@ -255,7 +234,7 @@ export default function PortfolioMindMap() {
       radius * 0.6,
       radius + (sz ? (sz - MAX_NODE_SIZE) * 1.2 : 0)
     );
-    const padX = (sz || 60) / 2 + 30; // 四角＋ラベル分の余白
+    const padX = (sz || 60) / 2 + 30;
     const padY = (sz || 60) / 2 + 30;
     const x = Math.min(dims.w - padX, Math.max(padX, cx + r * Math.cos(rad)));
     const y = Math.min(
@@ -265,7 +244,6 @@ export default function PortfolioMindMap() {
     return { x, y };
   }
 
-  // ノードごとに異なる周期・位相でゆらぎを計算（線と四角で共通利用）
   function wobble(i) {
     const freq = 0.06 + (i % 4) * 0.018;
     const phase = i * 1.8;
@@ -603,7 +581,6 @@ export default function PortfolioMindMap() {
               />
 
               {activeNode.type === "audio" ? (
-                // ── 音楽データ：実ファイルがあれば <audio> プレイヤーを表示 ──
                 <div
                   style={{
                     display: "flex",
@@ -643,7 +620,6 @@ export default function PortfolioMindMap() {
                   )}
                 </div>
               ) : activeNode.photos[photoIndex].src ? (
-                // ── 写真：実ファイルがあれば <img> で表示 ──
                 <img
                   src={activeNode.photos[photoIndex].src}
                   alt={activeNode.photos[photoIndex].caption}
@@ -654,7 +630,6 @@ export default function PortfolioMindMap() {
                   }}
                 />
               ) : (
-                // ── 写真未登録：プレースホルダー ──
                 <>
                   <div
                     style={{
