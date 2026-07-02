@@ -33,9 +33,10 @@ const NODES = [
     angle: 90,
     accent: ["#c45a2c", "#3a3a3a"],
     photos: [
-      { caption: "電気工事 01", src: "/images/0019B5AA-E6D3-49EF-9585-CBD13B8A313E.jpeg" },
+      { caption: "電気工事 01", src: "/images/1E124F83-5ECB-46AA-9D6F-B9487DEE947D.jpeg
+        " },
       { caption: "電気工事 02", src: "/images/141FEAA2-40CA-4CF9-A8E1-6391AF74FC72.jpeg" },
-      { caption: "電気工事 03", src: "/images/1E124F83-5ECB-46AA-9D6F-B9487DEE947D.jpeg" },
+      { caption: "電気工事 03", src: "/images/0019B5AA-E6D3-49EF-9585-CBD13B8A313E.jpeg" },
       { caption: "電気工事 04", src: "/images/2237378A-DE58-4B92-A2C5-0198E462F9D9.jpeg" },
       { caption: "電気工事 05", src: "/images/30820932-8AB4-485C-B4B3-B7F4BDDA8CE5.jpeg" },
       { caption: "電気工事 06", src: "/images/3CE03199-5F9E-4D43-B320-B7BF9C4FE1AE.jpeg" },
