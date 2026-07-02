@@ -15,7 +15,7 @@ const NODES = [
     label: "Space Conductor",
     en: "SPACE CONDUCTOR",
     code: "SC.03",
-    sub: "統合環境デザインサービス",
+    sub: "電気環境デザイン",
     angle: -90,
     accent: ["#3f6b3a", "#7e9c6f"],
     photos: [
@@ -120,7 +120,7 @@ const NODES = [
     label: "光景",
     en: "SCENERY",
     code: "LS.02",
-    sub: "空間デザイン学科 課題作品",
+    sub: "光の風景",
     angle: 150,
     accent: ["#5a6e8c", "#9aa6b5"],
     photos: [
