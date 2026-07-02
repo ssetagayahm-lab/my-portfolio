@@ -33,8 +33,7 @@ const NODES = [
     angle: 90,
     accent: ["#c45a2c", "#3a3a3a"],
     photos: [
-      { caption: "電気工事 01", src: "/images/1E124F83-5ECB-46AA-9D6F-B9487DEE947D.jpeg
-        " },
+      { caption: "電気工事 01", src: "/images/1E124F83-5ECB-46AA-9D6F-B9487DEE947D.jpeg" },
       { caption: "電気工事 02", src: "/images/141FEAA2-40CA-4CF9-A8E1-6391AF74FC72.jpeg" },
       { caption: "電気工事 03", src: "/images/0019B5AA-E6D3-49EF-9585-CBD13B8A313E.jpeg" },
       { caption: "電気工事 04", src: "/images/2237378A-DE58-4B92-A2C5-0198E462F9D9.jpeg" },
@@ -113,9 +112,7 @@ const NODES = [
       { caption: "電気工事 77", src: "/images/IMG_4855.jpeg" },
       { caption: "電気工事 78", src: "/images/IMG_5213.jpeg" },
       { caption: "電気工事 79", src: "/images/IMG_5248.jpeg" },
-      { caption: "電気工事 80", src: "/images/IMG_5498.jpeg" },
-      { caption: "電気工事 81", src: "/images/IMG_6634.jpeg" },
-      { caption: "電気工事 82", src: "/images/R0014544.jpeg" },
+      { caption: "電気工事 80", src: "/images/IMG_6634.jpeg" },
     ],
   },
   {
