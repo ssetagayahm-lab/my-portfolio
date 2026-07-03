@@ -37,7 +37,7 @@ const NODES = [
       { caption: "案件A - 02", src: "/images/141FEAA2-40CA-4CF9-A8E1-6391AF74FC72.jpeg" },
       { caption: "案件B - 01", src: "/images/30820932-8AB4-485C-B4B3-B7F4BDDA8CE5.jpeg" },
       { caption: "案件B - 02", src: "/images/7EAD256A-4513-4DCC-874D-10FA1D5B72F9.jpeg" },
-      { caption: "案件B - 03", src: "/images/6FBB0173-329E-4DF6-8286-6533044B306D.jpeg" },
+      { caption: "案件B - 03", src: "/images/6FBB0173-329E-4DF6-8286-6533044B306D.jpg" },
       { caption: "案件B - 04", src: "/images/5E21A7E4-D843-48AB-9A56-FF7877FFDD9F.jpeg" },
       { caption: "案件C - 01", src: "/images/3CE03199-5F9E-4D43-B320-B7BF9C4FE1AE.jpeg" },
       { caption: "案件C - 02", src: "/images/9A286C3E-B30C-41B8-8CD8-F2158E4852DC.jpeg" },
