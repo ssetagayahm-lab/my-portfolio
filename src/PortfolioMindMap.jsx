@@ -132,11 +132,11 @@ const NODES = [
     label: "光景",
     en: "SCENERY",
     code: "LS.02",
-    sub: "空間デザイン学科 課題作品",
+    sub: "灯の記録",
     angle: 150,
     accent: ["#5a6e8c", "#9aa6b5"],
     photos: [
-      { caption: "光景 01", src: "/images/R0014544.jpeg" },
+      { caption: "光景 01", src: "/images/R0014544.JPG" },
       { caption: "光景 02", src: "/images/IMG_4554.jpeg" },
       { caption: "光景 03", src: "/images/IMG_4646.jpeg" },
       { caption: "光景 04", src: "/images/IMG_4029.jpeg" },
@@ -772,6 +772,20 @@ export default function PortfolioMindMap() {
             >
               {String(photoIndex + 1).padStart(2, "0")} /{" "}
               {String(activeNode.photos.length).padStart(2, "0")}
+            </div>
+
+            <div
+              style={{
+                fontSize: 10,
+                color: "#bdb6a3",
+                letterSpacing: 1,
+                display: "flex",
+                gap: 16,
+                marginTop: 4,
+              }}
+            >
+              <span>← 戻る</span>
+              <span>進む →</span>
             </div>
           </div>
         </div>
