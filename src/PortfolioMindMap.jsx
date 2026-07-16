@@ -32,6 +32,26 @@ const NODES = [
     sub: "テナント電気工事",
     angle: 90,
     accent: ["#c45a2c", "#3a3a3a"],
+    caseInfo: {
+      "A": { 担当: "電気工事", 対象: "スナック", 工事規模: "店舗全体（コンセント、照明等）" },
+      "B": { 担当: "電気工事", 対象: "コワーキングスペース", 工事規模: "店舗全体（コンセント、照明等）" },
+      "C": { 担当: "電気工事・照明計画", 対象: "住宅", 工事規模: "住居全体（コンセント、照明等）" },
+      "D": { 担当: "電気工事", 対象: "飲食店", 工事規模: "店舗全体（コンセント、照明等）" },
+      "E": { 担当: "電気工事・照明計画", 対象: "商店街アーチ", 工事規模: "アーチ上部" },
+      "F": { 担当: "電気工事", 対象: "住宅", 工事規模: "住居全体（コンセント、照明等）" },
+      "G": { 担当: "電気工事", 対象: "住宅", 工事規模: "住居全体（コンセント、照明等）" },
+      "H": { 担当: "電気工事", 対象: "店舗", 工事規模: "店舗全体（コンセント、照明等）" },
+      "I": { 担当: "電気工事", 対象: "店舗", 工事規模: "店舗全体（コンセント、照明等）" },
+      "J": { 担当: "電気工事", 対象: "店舗", 工事規模: "照明" },
+      "K": { 担当: "電気工事・照明計画", 対象: "飲食店", 工事規模: "店舗全体（コンセント、照明等）" },
+      "L": { 担当: "電気工事・照明計画", 対象: "飲食店", 工事規模: "店舗全体（コンセント、照明等）" },
+      "M": { 担当: "電気工事", 対象: "店舗", 工事規模: "店舗全体（コンセント、照明等）" },
+      "N": { 担当: "電気工事", 対象: "スーパー", 工事規模: "店舗全体（コンセント、照明等）" },
+      "O": { 担当: "電気工事", 対象: "居酒屋", 工事規模: "店舗全体（コンセント、照明等）" },
+      "P": { 担当: "電気工事・照明計画", 対象: "住居", 工事規模: "コンセント、照明等" },
+      "Q": { 担当: "電気工事", 対象: "事務所兼アトリエ", 工事規模: "コンセント、照明等" },
+      "R": { 担当: "電気工事・照明計画", 対象: "町工場", 工事規模: "コンセント、照明等" },
+    },
     photos: [
       { caption: "案件A - 01", src: "/images/1E124F83-5ECB-46AA-9D6F-B9487DEE947D.jpeg" },
       { caption: "案件A - 02", src: "/images/141FEAA2-40CA-4CF9-A8E1-6391AF74FC72.jpeg" },
@@ -194,7 +214,30 @@ const NODES = [
   },
 ];
 
-// 登録した写真の枚数に応じて四角のサイズを決める
+// 案件情報
+const CASE_INFO = {
+  "A": { role: "電気工事", target: "スナック", scale: "店舗全体（コンセント、照明等）" },
+  "B": { role: "電気工事", target: "コワーキングスペース", scale: "店舗全体（コンセント、照明等）" },
+  "C": { role: "電気工事、照明計画", target: "住宅", scale: "住居全体（コンセント、照明等）" },
+  "D": { role: "電気工事", target: "飲食店", scale: "店舗全体（コンセント、照明等）" },
+  "E": { role: "電気工事、照明計画", target: "商店街アーチ", scale: "アーチ上部" },
+  "F": { role: "電気工事", target: "住宅", scale: "住居全体（コンセント、照明等）" },
+  "G": { role: "電気工事", target: "住宅", scale: "住居全体（コンセント、照明等）" },
+  "H": { role: "電気工事", target: "店舗", scale: "店舗全体（コンセント、照明等）" },
+  "I": { role: "電気工事", target: "店舗", scale: "店舗全体（コンセント、照明等）" },
+  "J": { role: "電気工事", target: "店舗", scale: "照明" },
+  "K": { role: "電気工事、照明計画", target: "飲食店", scale: "店舗全体（コンセント、照明等）" },
+  "L": { role: "電気工事、照明計画", target: "飲食店", scale: "店舗全体（コンセント、照明等）" },
+  "M": { role: "電気工事", target: "店舗", scale: "店舗全体（コンセント、照明等）" },
+  "N": { role: "電気工事", target: "スーパー", scale: "店舗全体（コンセント、照明等）" },
+  "O": { role: "電気工事", target: "居酒屋", scale: "店舗全体（コンセント、照明等）" },
+  "P": { role: "電気工事、照明計画", target: "住居", scale: "コンセント、照明等" },
+  "Q": { role: "電気工事", target: "事務所兼アトリエ", scale: "コンセント、照明等" },
+  "R": { role: "電気工事、照明計画", target: "町工場", scale: "コンセント、照明等" },
+  "S": { role: "電気工事、照明計画", target: "事務所", scale: "コンセント、照明等" },
+  "T": { role: "電気工事", target: "クリニック", scale: "店舗全体（コンセント、照明等）" },
+  "U": { role: "電気工事、照明計画", target: "飲食店", scale: "店舗全体（コンセント、照明等）" },
+};
 const BASE_SIZE = 40; // 写真が最少の項目のサイズ
 const SIZE_STEP = 7; // 写真1枚増えるごとに大きくなる量
 const MAX_SIZE = BASE_SIZE * 3; // 最大でも基準サイズの3倍まで
@@ -593,11 +636,20 @@ export default function PortfolioMindMap() {
               padding: 24,
             }}
           >
+            {/* 電気工事：写真＋案件情報を横並びに */}
+            <div style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-start",
+              gap: 16,
+              width: "100%",
+              justifyContent: "center",
+            }}>
             <div
               style={{
-                width: "min(72vw, 340px)",
-                height: "min(102vw, 480px)",
-                maxHeight: "72vh",
+                width: "min(52vw, 240px)",
+                height: "min(75vw, 340px)",
+                maxHeight: "60vh",
                 borderRadius: 8,
                 border: `2px solid ${RING}`,
                 display: "flex",
@@ -747,6 +799,39 @@ export default function PortfolioMindMap() {
                 </div>
               )}
             </div>
+
+            {/* 案件情報パネル（電気工事のみ） */}
+            {activeNode.id === "electric" && (() => {
+              const match = activeNode.photos[photoIndex].caption.match(/案件([A-U])/);
+              const info = match ? CASE_INFO[match[1]] : null;
+              return info ? (
+                <div style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 10,
+                  width: "min(30vw, 140px)",
+                  paddingTop: 4,
+                }}>
+                  <div style={{
+                    fontSize: 11,
+                    fontWeight: 700,
+                    color: INK,
+                    letterSpacing: 1,
+                    borderBottom: `1px solid ${RING}`,
+                    paddingBottom: 6,
+                  }}>
+                    案件{match[1]}
+                  </div>
+                  {[["担当", info.role], ["対象", info.target], ["工事規模", info.scale]].map(([key, val]) => (
+                    <div key={key} style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                      <div style={{ fontSize: 8.5, color: "#9a9484", letterSpacing: 1 }}>{key}</div>
+                      <div style={{ fontSize: 9.5, color: INK, lineHeight: 1.5 }}>{val}</div>
+                    </div>
+                  ))}
+                </div>
+              ) : null;
+            })()}
+            </div>{/* end row wrapper */}
 
             <div style={{ display: "flex", gap: 10 }}>
               {activeNode.photos.map((p, i) => (
