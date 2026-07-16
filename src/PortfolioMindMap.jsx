@@ -632,24 +632,15 @@ export default function PortfolioMindMap() {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-              gap: 20,
+              gap: 12,
               padding: 24,
             }}
           >
-            {/* 電気工事：写真＋案件情報を横並びに */}
-            <div style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "flex-start",
-              gap: 16,
-              width: "100%",
-              justifyContent: "center",
-            }}>
             <div
               style={{
-                width: "min(52vw, 240px)",
-                height: "min(75vw, 340px)",
-                maxHeight: "60vh",
+                width: "min(72vw, 340px)",
+                height: "min(102vw, 480px)",
+                maxHeight: "62vh",
                 borderRadius: 8,
                 border: `2px solid ${RING}`,
                 display: "flex",
@@ -800,38 +791,28 @@ export default function PortfolioMindMap() {
               )}
             </div>
 
-            {/* 案件情報パネル（電気工事のみ） */}
+            {/* 案件情報（電気工事のみ、写真の下に表示） */}
             {activeNode.id === "electric" && (() => {
               const match = activeNode.photos[photoIndex].caption.match(/案件([A-U])/);
               const info = match ? CASE_INFO[match[1]] : null;
               return info ? (
                 <div style={{
                   display: "flex",
-                  flexDirection: "column",
-                  gap: 10,
-                  width: "min(30vw, 140px)",
-                  paddingTop: 4,
+                  flexDirection: "row",
+                  gap: 16,
+                  width: "min(72vw, 340px)",
+                  padding: "8px 0",
+                  borderTop: `1px solid ${RING}`,
                 }}>
-                  <div style={{
-                    fontSize: 11,
-                    fontWeight: 700,
-                    color: INK,
-                    letterSpacing: 1,
-                    borderBottom: `1px solid ${RING}`,
-                    paddingBottom: 6,
-                  }}>
-                    案件{match[1]}
-                  </div>
-                  {[["担当", info.role], ["対象", info.target], ["工事規模", info.scale]].map(([key, val]) => (
-                    <div key={key} style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-                      <div style={{ fontSize: 8.5, color: "#9a9484", letterSpacing: 1 }}>{key}</div>
-                      <div style={{ fontSize: 9.5, color: INK, lineHeight: 1.5 }}>{val}</div>
+                  {[["担当", info.role], ["対象", info.target], ["規模", info.scale]].map(([key, val]) => (
+                    <div key={key} style={{ display: "flex", flexDirection: "column", gap: 2, flex: 1 }}>
+                      <div style={{ fontSize: 8, color: "#9a9484", letterSpacing: 1 }}>{key}</div>
+                      <div style={{ fontSize: 9, color: INK, lineHeight: 1.4 }}>{val}</div>
                     </div>
                   ))}
                 </div>
               ) : null;
             })()}
-            </div>{/* end row wrapper */}
 
             <div style={{ display: "flex", gap: 10 }}>
               {activeNode.photos.map((p, i) => (
