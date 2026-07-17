@@ -19,7 +19,26 @@ const NODES = [
     angle: -90,
     accent: ["#3f6b3a", "#7e9c6f"],
     photos: [
-      { caption: "事業計画 概要図", src: "/images/conductor-01.jpeg" },
+      { caption: "定義", text: `「Space Conductor」の定義
+
+Space Conductor（スペース・コンダクター）とは：
+
+「電気（インフラ）」
+「ICT（制御・可視化）」
+「空間デザイン（体験）」
+
+の3領域が重なり合う境界線に立ち、空間の持つ機能と情緒をオーケストラの指揮者（Conductor）のように調律・統合する「独自の専門知識（Specific Knowledge）」、およびそれを体現する「専門家としてのあり方」。
+
+─ 定義を構成する3つのコアイメージ ─
+
+1. インフラ、デジタル、感性の「翻訳者（タペストリー）」
+電気の物理的な制約を理解し、ICTの論理的な制御を組み込み、空間デザインの感性的な表現へと昇華させる。これら異なる「言語」を一人で統合し、1つの体験へと編み上げる能力そのものを指します。
+
+2. 空間を「動的（ダイナミック）」に変革する指揮者
+固定された不動産としての「静的な空間」を、光やデータ、エネルギーの流れによって時間とともに変化する「動的なメディア（体験の舞台）」へとアップデートする役割です。
+
+3. 分断された領域を地続きにする「唯一無二の専門性（Specific Knowledge）」
+それぞれ別のスペシャリスト（電気工事業者、システムインテグレーター、デザイナー）が必要だった領域を、一貫した思想のもとにシームレスに結合できる。` },
       { caption: "ゾーニング 照明案", src: "/images/conductor-02.jpeg" },
       { caption: "marché 出展プラン", src: "/images/conductor-03.jpeg" },
     ],
@@ -692,7 +711,37 @@ export default function PortfolioMindMap() {
                 }}
               />
 
-              {activeNode.type === "audio" ? (
+              {activeNode.photos[photoIndex].text ? (
+                // ── テキストコンテンツ ──
+                <div
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    overflowY: "auto",
+                    padding: "16px 14px",
+                    boxSizing: "border-box",
+                  }}
+                >
+                  {activeNode.photos[photoIndex].text.split("\n").map((line, i) => (
+                    <p
+                      key={i}
+                      style={{
+                        fontSize: line.startsWith("「Space") || line.startsWith("─") ? 10.5 : 9.5,
+                        lineHeight: 1.75,
+                        color: line === "" ? "transparent" : INK,
+                        margin: "0 0 2px 0",
+                        fontWeight: line.startsWith("「Space") || line.match(/^[1-3]\./) ? 600 : 400,
+                        letterSpacing: 0.3,
+                        borderBottom: line.startsWith("─") ? `1px solid ${RING}` : "none",
+                        paddingBottom: line.startsWith("─") ? 6 : 0,
+                        marginBottom: line.startsWith("─") ? 8 : 2,
+                      }}
+                    >
+                      {line || "\u00A0"}
+                    </p>
+                  ))}
+                </div>
+              ) : activeNode.type === "audio" ? (
                 // ── 音楽データ：実ファイルがあれば <audio> プレイヤーを表示 ──
                 <div
                   style={{
