@@ -213,7 +213,42 @@ Space Conductor（スペース・コンダクター）とは：
     angle: -150,
     accent: ["#9c7a2c", "#d4b95f"],
     photos: [
-      { caption: "信号フロー図", src: "/images/installation-01.jpeg" },
+      { caption: "機器構成", text: `音響インタラクション・システム構成
+
+人の動きをカメラで捉え、動きや量に応じてスピーカーから出る音の数やノリを制御する。
+
+制御ソフトウェア
+TouchDesigner
+
+─ 機器リスト ─
+
+カメラ
+ZOOM Q2n-4K（4K）
+人の動きをリアルタイムで映像解析。TouchDesignerへ入力。
+
+オーディオI/F
+SSL 2（Solid State Logic）× 1台
+TouchDesignerからの音声信号をアナログ変換してアンプへ送出。
+
+プリメインアンプ
+TEAC A-R630 × 1台
+SSL 2からの信号を受け、4本のスピーカーへ分配・増幅。
+
+スピーカー
+BOSE 55WER × 4本
+空間の四隅に配置。人の動きに応じて音の広がりと強度を動的に変化。
+
+─ 信号フロー ─
+
+カメラ（映像）
+　↓
+TouchDesigner（解析・制御）
+　↓
+SSL 2（D/A変換）
+　↓
+TEAC A-R630（増幅）
+　↓
+BOSE 55WER × 4（出力）` },
       { caption: "機器カタログ管理", src: "/images/installation-02.jpeg" },
       { caption: "AI構成検証", src: "/images/installation-03.jpeg" },
     ],
