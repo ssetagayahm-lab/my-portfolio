@@ -263,7 +263,62 @@ BOSE 55WER × 4（出力）` },
     angle: -30,
     accent: ["#2c5c66", "#7fb0ba"],
     photos: [
-      { caption: "seeing sound", audioSrc: "/audio/seeing_sound.wav" },
+      { caption: "Tiny Party Production", src: "/images/IMG_6007.jpeg", text: `Tiny Party Production
+– Sound and Light Package –
+
+「いつもの場所を、特別な空間に」
+
+車1台、最短60分で設営完了する、ポータブルな音響・照明空間パッケージ。
+
+カフェの貸切パーティー、ギャラリーのオープニング、オフィスでのレセプション、あるいは自宅のガレージ。大掛かりな機材や、ものものしい施工は必要ありません。洗練されたオーディオと、空間に溶け込む光の演出をパッケージでお届けします。
+
+■ 特徴
+
+・空間に溶け込むミニマルデザイン
+スタイリッシュなトールボーイスピーカー（BOSE 55WER）と、美しく空間を切り取るライン照明を採用。イベントの主役やインテリアを邪魔せず、上質な雰囲気を底上げします。
+
+・ワンストップ・クイック設営
+機材はすべて車1台で搬入。現地到着から30〜60分で音出し・点灯まで完了。撤収もスピーディーです。
+
+・自由な配置（Sound × Light × Layout）
+空間の形状や人の動線に合わせて最適な配置をご提案。音と光、そしてレイアウトが一体となった「空間プロダクト」としてご提供します。
+
+■ 提供内容
+
+・音響システム：4chスピーカー、DJ機材、アンプ
+・照明システム：ライン照明（調光演出）
+・空間レイアウト：配置デザイン
+・往復搬入出・設営・撤収費込み
+
+■ 料金プラン（参考）
+
+・3時間パック：¥30,000〜
+・5時間パック：¥50,000〜
+・1日パック：¥80,000〜
+
+※設営・撤収時間は含みません。` },
+      { caption: "設営マニュアル", text: `設営マニュアル
+パッケージ標準化チェックリスト
+
+【使用機器】
+・アンプ（TEAC A-R630）
+・DJ機材（VCI380等）
+・スピーカー4本（BOSE 55WER）
+・ライン照明2本
+・各種スタンド、ケーブル
+
+─ タイムスケジュール ─
+
+00〜10分：搬入＆配置決定
+車から台車で一気に搬入。「音源位置（DJ卓）」「スピーカー4点の位置」「ライン照明の配置」をコンセント位置を確認しながら決める。
+
+10〜40分：ハードウェア設置＆結線
+スピーカー4本、ライン照明2本をスタンドに設置。ケーブルを外周に沿ってワンウェイで配線。DJ卓（アンプ類）にすべての系統を集約して結線。
+
+40〜60分：システムチェック＆微調整
+電源ON。音出し（4chのバランス確認、位相チェック）。照明点灯。光の向き、ラインの直線美を調整。
+
+＊注：デコレーションは別途` },
     ],
   },
 ];
@@ -747,34 +802,42 @@ export default function PortfolioMindMap() {
               />
 
               {activeNode.photos[photoIndex].text ? (
-                // ── テキストコンテンツ ──
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    overflowY: "auto",
-                    padding: "16px 14px",
-                    boxSizing: "border-box",
-                  }}
-                >
-                  {activeNode.photos[photoIndex].text.split("\n").map((line, i) => (
-                    <p
-                      key={i}
-                      style={{
-                        fontSize: line.startsWith("「Space") || line.startsWith("─") ? 10.5 : 9.5,
-                        lineHeight: 1.75,
-                        color: line === "" ? "transparent" : INK,
-                        margin: "0 0 2px 0",
-                        fontWeight: line.startsWith("「Space") || line.match(/^[1-3]\./) ? 600 : 400,
-                        letterSpacing: 0.3,
-                        borderBottom: line.startsWith("─") ? `1px solid ${RING}` : "none",
-                        paddingBottom: line.startsWith("─") ? 6 : 0,
-                        marginBottom: line.startsWith("─") ? 8 : 2,
-                      }}
-                    >
-                      {line || "\u00A0"}
-                    </p>
-                  ))}
+                // ── テキスト（写真あれば上部に表示）──
+                <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", overflow: "hidden" }}>
+                  {activeNode.photos[photoIndex].src && (
+                    <img
+                      src={activeNode.photos[photoIndex].src}
+                      alt={activeNode.photos[photoIndex].caption}
+                      style={{ width: "100%", height: "35%", objectFit: "cover", flexShrink: 0 }}
+                    />
+                  )}
+                  <div
+                    style={{
+                      flex: 1,
+                      overflowY: "auto",
+                      padding: "14px 14px",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    {activeNode.photos[photoIndex].text.split("\n").map((line, i) => (
+                      <p
+                        key={i}
+                        style={{
+                          fontSize: 9.5,
+                          lineHeight: 1.75,
+                          color: INK,
+                          margin: "0 0 2px 0",
+                          fontWeight: line.startsWith("■") || line.startsWith("Tiny Party") || line.match(/^【/) || line.startsWith("設営マニュアル") ? 600 : 400,
+                          letterSpacing: 0.3,
+                          borderBottom: line.startsWith("─") ? `1px solid ${RING}` : "none",
+                          paddingBottom: line.startsWith("─") ? 4 : 0,
+                          marginBottom: line === "" ? 6 : line.startsWith("─") ? 8 : 2,
+                        }}
+                      >
+                        {line || "\u00A0"}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               ) : activeNode.type === "audio" ? (
                 // ── 音楽データ：実ファイルがあれば <audio> プレイヤーを表示 ──
