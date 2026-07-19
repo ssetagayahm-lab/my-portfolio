@@ -302,7 +302,14 @@ BOSE 55WER × 4（出力）` },
 
 【使用機器】
 ・アンプ（TEAC A-R630）
-・DJ機材（VCI380等）
+・DJ機材
+　ターンテーブル
+　　テクニクス SL-1200MK5
+　　テクニクス SL-1200MK6
+　ミキサー
+　　ALLEN & HEATH XONE:43
+　PCDJ
+　　VESTAX VCI380
 ・スピーカー4本（BOSE 55WER）
 ・ライン照明2本
 ・各種スタンド、ケーブル
