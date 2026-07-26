@@ -302,11 +302,8 @@ BOSE 55WER × 4（出力）` },
 
 ・DUB主観DJセット　¥15,000
 ・JAZZ主観DJセット　¥15,000
-・FREESTYLE DJセット　¥15,000 },
-      { caption: "設営マニュアル", text: `設営マニュアル
-パッケージ標準化チェックリスト
-
-【使用機器】
+・FREESTYLE DJセット　¥15,000` },
+      { caption: "設営マニュアル", text: `【使用機器】
 ・アンプ（TEAC A-R630）
 ・DJ機材
 　ターンテーブル
@@ -426,6 +423,7 @@ function VinylLabel({ size = 96, node, isCenter = false }) {
 
 export default function PortfolioMindMap() {
   const [selected, setSelected] = useState(null);
+  const [showProfile, setShowProfile] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const containerRef = useRef(null);
   const [dims, setDims] = useState({ w: 800, h: 600 });
@@ -560,15 +558,21 @@ export default function PortfolioMindMap() {
               />
             );
           })}
+
         </svg>
 
-        <div
+        <button
+          onClick={() => setShowProfile(true)}
           style={{
             position: "absolute",
             left: cx,
             top: cy,
             transform: "translate(-50%, -50%)",
             lineHeight: 0,
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: 0,
           }}
         >
           <VinylLabel size={26} isCenter />
@@ -588,7 +592,7 @@ export default function PortfolioMindMap() {
           >
             {CENTER_LABEL}
           </span>
-        </div>
+        </button>
 
         {NODES.map((n, i) => {
           const p = nodePos(n.angle, nodeSize(n));
@@ -1045,6 +1049,163 @@ export default function PortfolioMindMap() {
                 進む →
               </button>
             </div>
+          </div>
+        </div>
+      )}
+      {/* ── プロフィールページ ───────────────────────── */}
+      {showProfile && (
+        <div
+          style={{
+            position: "absolute",
+            top: 0, left: 0,
+            width: "100%", height: "100%",
+            background: CREAM,
+            display: "flex",
+            flexDirection: "column",
+            animation: "fadeIn 0.35s ease",
+            overflowY: "auto",
+          }}
+        >
+          {/* ヘッダー */}
+          <div style={{
+            display: "flex",
+            alignItems: "center",
+            gap: 16,
+            padding: "22px 22px 16px",
+            borderBottom: `1px solid ${RING}`,
+            position: "sticky",
+            top: 0,
+            background: CREAM,
+            zIndex: 10,
+          }}>
+            <button
+              onClick={() => setShowProfile(false)}
+              style={{
+                border: `1px solid ${RING}`,
+                background: CREAM,
+                width: 36, height: 36,
+                borderRadius: 6,
+                cursor: "pointer",
+                fontSize: 15,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: INK,
+              }}
+            >←</button>
+            <div>
+              <div style={{ fontSize: 9.5, letterSpacing: 2, color: "#9a9484" }}>
+                PORTFOLIO · RTD 001
+              </div>
+              <div style={{ fontSize: 16, fontWeight: 700, marginTop: 2 }}>
+                電気環境計画
+              </div>
+            </div>
+          </div>
+
+          {/* コンテンツ */}
+          <div style={{ padding: "28px 24px 48px", display: "flex", flexDirection: "column", gap: 32 }}>
+
+            {/* 自己紹介 */}
+            <section>
+              <div style={{ fontSize: 8.5, letterSpacing: 2, color: "#9a9484", marginBottom: 10 }}>PROFILE</div>
+              <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 4 }}>ミズタニ　ヒロユキ</div>
+              <div style={{ fontSize: 10, color: "#8a8576", marginBottom: 12, letterSpacing: 1 }}>
+                電気工事士 / 空間環境デザイナー
+              </div>
+              <div style={{ fontSize: 10.5, lineHeight: 1.9, color: INK }}>
+                電気工事業界に15年以上携わり、2016年に水谷内装電気として独立。第一種電気工事士・2級施工管理技士の資格を持ち、飲食店・クリニック・アパレル店舗・住宅など多様な空間の電気工事を手がける。現在は空間デザインを学びながら、電気・ICT・デザインの3領域を統合した「電気環境計画」という独自の専門領域を開拓中。
+              </div>
+            </section>
+
+            <div style={{ borderTop: `0.5px solid ${RING}`, opacity: 0.3 }} />
+
+            {/* 事業内容 */}
+            <section>
+              <div style={{ fontSize: 8.5, letterSpacing: 2, color: "#9a9484", marginBottom: 14 }}>BUSINESS</div>
+
+              <div style={{ marginBottom: 18 }}>
+                <div style={{ fontSize: 11, fontWeight: 700, marginBottom: 6 }}>水谷内装電気</div>
+                <div style={{ fontSize: 10.5, lineHeight: 1.9, color: INK }}>
+                  飲食店・クリニック・居酒屋・アパレル店舗・住宅など、多様な空間の電気工事を一貫して担当。施主のコンセプトに合わせた照明計画—光の位置・色・明るさまでトータルにデザインし、空間の質を底上げする。
+                </div>
+              </div>
+
+              <div style={{ marginBottom: 18 }}>
+                <div style={{ fontSize: 11, fontWeight: 700, marginBottom: 6 }}>電気環境計画</div>
+                <div style={{ fontSize: 10.5, lineHeight: 1.9, color: INK, marginBottom: 12 }}>
+                  電気インフラ・ICT・空間デザインが交わる領域で、3つの事業を展開。
+                </div>
+                {[
+                  ["Space Conductor", "空間の電気環境を統合的に設計。電気・制御・デザインをコーディネートする。"],
+                  ["Tiny Party Production", "車1台・最短60分で設営できる、小規模イベント向け音響・照明パッケージ。"],
+                  ["Installation", "人の動きとシステムを同期させた、インタラクティブな空間体験の構築。"],
+                ].map(([title, desc]) => (
+                  <div key={title} style={{ marginBottom: 14, paddingLeft: 12, borderLeft: `2px solid ${RING}` }}>
+                    <div style={{ fontSize: 10.5, fontWeight: 700, marginBottom: 4 }}>{title}</div>
+                    <div style={{ fontSize: 10, lineHeight: 1.8, color: "#5a5a5a" }}>{desc}</div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <div style={{ borderTop: `0.5px solid ${RING}`, opacity: 0.3 }} />
+
+            {/* リンク */}
+            <section>
+              <div style={{ fontSize: 8.5, letterSpacing: 2, color: "#9a9484", marginBottom: 14 }}>LINKS</div>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+                {[
+                  ["Facebook", "https://www.facebook.com/profile.php?id=61592235909183&locale=ja_JP"],
+                  ["Instagram", "https://www.instagram.com/denkikankyokeikaku.hm/"],
+                  ["Mixcloud", "https://www.mixcloud.com/h_m1/"],
+                ].map(([label, url]) => (
+                  <a
+                    key={label}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 10,
+                      fontSize: 11,
+                      color: INK,
+                      textDecoration: "none",
+                      padding: "10px 14px",
+                      border: `1px solid ${RING}`,
+                      borderRadius: 6,
+                    }}
+                  >
+                    <span style={{ fontSize: 9, letterSpacing: 1, color: "#9a9484", width: 70 }}>{label}</span>
+                    <span style={{ fontSize: 10, color: "#5a5a5a", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{url}</span>
+                  </a>
+                ))}
+              </div>
+            </section>
+
+            <div style={{ borderTop: `0.5px solid ${RING}`, opacity: 0.3 }} />
+
+            {/* 問い合わせ */}
+            <section>
+              <div style={{ fontSize: 8.5, letterSpacing: 2, color: "#9a9484", marginBottom: 14 }}>CONTACT</div>
+              <a
+                href="mailto:denkikankyokeikaku.hm@gmail.com"
+                style={{
+                  display: "block",
+                  fontSize: 11,
+                  color: INK,
+                  textDecoration: "none",
+                  padding: "12px 14px",
+                  border: `1px solid ${RING}`,
+                  borderRadius: 6,
+                  letterSpacing: 0.5,
+                }}
+              >
+                denkikankyokeikaku.hm@gmail.com
+              </a>
+            </section>
+
           </div>
         </div>
       )}
