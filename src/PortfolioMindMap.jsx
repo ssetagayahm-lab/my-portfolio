@@ -207,9 +207,9 @@ Space Conductor（スペース・コンダクター）とは：
   {
     id: "av",
     label: "Installation",
-    en: "AV SYSTEM DESIGN",
+    en: "Installation DESIGN",
     code: "IR.05",
-    sub: "システムインテグレーション設計",
+    sub: "インタラクティブな空間体験の構築。",
     angle: -150,
     accent: ["#9c7a2c", "#d4b95f"],
     photos: [
@@ -778,46 +778,6 @@ export default function PortfolioMindMap() {
                 overflow: "hidden",
               }}
             >
-              {/* 左端タップ：前の写真へ */}
-              <button
-                onClick={() =>
-                  setPhotoIndex(
-                    (photoIndex - 1 + activeNode.photos.length) %
-                      activeNode.photos.length
-                  )
-                }
-                aria-label="前の写真"
-                style={{
-                  position: "absolute",
-                  left: 0,
-                  top: 0,
-                  width: "30%",
-                  height: "100%",
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  zIndex: 2,
-                }}
-              />
-              {/* 右端タップ：次の写真へ */}
-              <button
-                onClick={() =>
-                  setPhotoIndex((photoIndex + 1) % activeNode.photos.length)
-                }
-                aria-label="次の写真"
-                style={{
-                  position: "absolute",
-                  right: 0,
-                  top: 0,
-                  width: "30%",
-                  height: "100%",
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  zIndex: 2,
-                }}
-              />
-
               {activeNode.photos[photoIndex].text ? (
                 // ── テキスト（写真あれば上部に表示）──
                 <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", overflow: "hidden" }}>
@@ -1127,7 +1087,7 @@ export default function PortfolioMindMap() {
               <div style={{ marginBottom: 18 }}>
                 <div style={{ fontSize: 11, fontWeight: 700, marginBottom: 6 }}>水谷内装電気</div>
                 <div style={{ fontSize: 10.5, lineHeight: 1.9, color: INK }}>
-                  飲食店・クリニック・居酒屋・アパレル店舗・住宅など、多様な空間の電気工事を一貫して担当。施主のコンセプトに合わせた照明計画—光の位置・色・明るさ・影・見せる器具・見せない器具をトータルにデザインし、空間の質を底上げする。
+                  神奈川県認定の登録電気工事業者として、飲食店・クリニック・居酒屋・アパレル店舗・住宅など多様な空間の電気工事を、墨出しから配線・器具付・検査まで一貫して担当。施主のコンセプトに合わせた照明計画では、光の位置・色・明るさ・影・見せる器具・見せない器具をトータルにデザインし、空間の質を底上げする。
                 </div>
               </div>
 
