@@ -306,9 +306,6 @@ BOSE 55WER × 4（出力）` },
 ・DUB主観DJセット　¥15,000
 ・JAZZ主観DJセット　¥15,000
 ・FREESTYLE DJセット　¥15,000` },
-      { caption: "いあさ - 01", src: "/images/IMG_6060.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
-      { caption: "いあさ - 02", src: "/images/IMG_6061.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
-      { caption: "いあさ - 03", src: "/images/IMG_6064.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
       { caption: "設営マニュアル", text: `【使用機器】
 ・アンプ（TEAC A-R630）
 ・DJ機材
@@ -335,6 +332,13 @@ BOSE 55WER × 4（出力）` },
 電源ON。音出し（4chのバランス確認、位相チェック）。照明点灯。光の向き、ラインの直線美を調整。
  
 ＊注：デコレーションは別途` },
+      { caption: "いあさ - 01", src: "/images/IMG_6060.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
+      { caption: "いあさ - 02", src: "/images/IMG_6061.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
+      { caption: "いあさ - 03", src: "/images/IMG_6064.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
+      { caption: "seek - 01", src: "/images/IMG_6074.jpeg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
+      { caption: "seek - 02", src: "/images/IMG_6077.jpeg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
+      { caption: "seek - 03", src: "/images/S__51757062.jpeg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
+      { caption: "seek - 04", src: "/images/S__51757066.jpeg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
     ],
   },
 ];
