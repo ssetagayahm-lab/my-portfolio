@@ -1,13 +1,13 @@
 import { useState, useRef, useEffect } from "react";
- 
+
 // ── トークン ──────────────────────────────────────────────
 const CREAM = "#F1ECDD";
 const INK = "#1a1a1a";
 const RING = "#0c0c0c";
- 
+
 const CENTER_LABEL = "PORTFOLIO";
 const CENTER_CODE = "RTD 001";
- 
+
 // 各項目 = レコードラベル風カード。accent はジャケットの色帯に使う。
 const NODES = [
   {
@@ -20,23 +20,23 @@ const NODES = [
     accent: ["#3f6b3a", "#7e9c6f"],
     photos: [
       { caption: "定義", text: `「Space Conductor」の定義
- 
+
 Space Conductor（スペース・コンダクター）とは：
- 
+
 「電気（インフラ）」
 「ICT（制御・可視化）」
 「空間デザイン（体験）」
- 
+
 の3領域が重なり合う境界線に立ち、空間の持つ機能と情緒をオーケストラの指揮者（Conductor）のように調律・統合する「独自の専門知識（Specific Knowledge）」、およびそれを体現する「専門家としてのあり方」。
- 
+
 ─ 定義を構成する3つのコアイメージ ─
- 
+
 1. インフラ、デジタル、感性の「翻訳者（タペストリー）」
 電気の物理的な制約を理解し、ICTの論理的な制御を組み込み、空間デザインの感性的な表現へと昇華させる。これら異なる「言語」を一人で統合し、1つの体験へと編み上げる能力そのものを指します。
- 
+
 2. 空間を「動的（ダイナミック）」に変革する指揮者
 固定された不動産としての「静的な空間」を、光やデータ、エネルギーの流れによって時間とともに変化する「動的なメディア（体験の舞台）」へとアップデートする役割です。
- 
+
 3. 分断された領域を地続きにする「唯一無二の専門性（Specific Knowledge）」
 それぞれ別のスペシャリスト（電気工事業者、システムインテグレーター、デザイナー）が必要だった領域を、一貫した思想のもとにシームレスに結合できる。` },
       { caption: "ゾーニング 照明案", src: "/images/conductor-02.jpeg" },
@@ -214,32 +214,32 @@ Space Conductor（スペース・コンダクター）とは：
     accent: ["#9c7a2c", "#d4b95f"],
     photos: [
       { caption: "機器構成", text: `音響インタラクション・システム構成
- 
+
 人の動きをカメラで捉え、動きや量に応じてスピーカーから出る音の数やノリを制御する。
- 
+
 制御ソフトウェア
 TouchDesigner
- 
+
 ─ 機器リスト ─
- 
+
 カメラ
 ZOOM Q2n-4K（4K）
 人の動きをリアルタイムで映像解析。TouchDesignerへ入力。
- 
+
 オーディオI/F
 SSL 2（Solid State Logic）× 1台
 TouchDesignerからの音声信号をアナログ変換してアンプへ送出。
- 
+
 プリメインアンプ
 TEAC A-R630 × 1台
 SSL 2からの信号を受け、4本のスピーカーへ分配・増幅。
- 
+
 スピーカー
 BOSE 55WER × 4本
 空間の四隅に配置。人の動きに応じて音の広がりと強度を動的に変化。
- 
+
 ─ 信号フロー ─
- 
+
 カメラ（映像）
 　↓
 TouchDesigner（解析・制御）
@@ -265,41 +265,41 @@ BOSE 55WER × 4（出力）` },
     photos: [
       { caption: "Tiny Party Production", src: "/images/IMG_6007.jpeg", text: `Tiny Party Production
 – Sound and Light Package –
- 
+
 「いつもの場所を、特別な空間に」
- 
+
 車1台、最短60分で設営完了する、ポータブルな音響・照明空間パッケージ。
- 
+
 カフェの貸切パーティー、ギャラリーのオープニング、オフィスでのレセプション、あるいは自宅のガレージ。大掛かりな機材や、ものものしい施工は必要ありません。洗練されたオーディオと、空間に溶け込む光の演出をパッケージでお届けします。
- 
+
 ■ 特徴
- 
+
 ・空間に溶け込むミニマルデザイン
 スタイリッシュなトールボーイスピーカー（BOSE 55WER）と、美しく空間を切り取るライン照明を採用。イベントの主役やインテリアを邪魔せず、上質な雰囲気を底上げします。
- 
+
 ・ワンストップ・クイック設営
 機材はすべて車1台で搬入。現地到着から30〜60分で音出し・点灯まで完了。撤収もスピーディーです。
- 
+
 ・自由な配置（Sound × Light × Layout）
 空間の形状や人の動線に合わせて最適な配置をご提案。音と光、そしてレイアウトが一体となった「空間プロダクト」としてご提供します。
- 
+
 ■ 提供内容
- 
+
 ・音響システム：4chスピーカー、DJ機材、アンプ
 ・照明システム：ライン照明（調光演出）
 ・空間レイアウト：配置デザイン
 ・往復搬入出・設営・撤収費込み
- 
+
 ■ 料金プラン（参考）
- 
+
 ・3時間パック：¥30,000〜
 ・5時間パック：¥50,000〜
 ・1日パック：¥80,000〜
- 
+
 ※設営・撤収時間は含みません。
- 
+
 ■ DJサービス（オプション）
- 
+
 ・DUB主観DJセット　¥15,000
 ・JAZZ主観DJセット　¥15,000
 ・FREESTYLE DJセット　¥15,000` },
@@ -316,30 +316,30 @@ BOSE 55WER × 4（出力）` },
 ・スピーカー4本（BOSE 55WER）
 ・ライン照明2本
 ・各種スタンド、ケーブル
- 
+
 ─ タイムスケジュール ─
- 
+
 00〜10分：搬入＆配置決定
 車から台車で一気に搬入。「音源位置（DJ卓）」「スピーカー4点の位置」「ライン照明の配置」をコンセント位置を確認しながら決める。
- 
+
 10〜40分：ハードウェア設置＆結線
 スピーカー4本、ライン照明2本をスタンドに設置。ケーブルを外周に沿ってワンウェイで配線。DJ卓（アンプ類）にすべての系統を集約して結線。
- 
+
 40〜60分：システムチェック＆微調整
 電源ON。音出し（4chのバランス確認、位相チェック）。照明点灯。光の向き、ラインの直線美を調整。
- 
+
 ＊注：デコレーションは別途` },
       { caption: "いあさ - 01", src: "/images/IMG_6060.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
       { caption: "いあさ - 02", src: "/images/IMG_6061.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
       { caption: "いあさ - 03", src: "/images/IMG_6064.jpeg", venue: { name: "米粉と発酵と珈琲　いあさ", instagram: "https://www.instagram.com/iasa_sagamiko/", desc: "TPP初となる実地展開。機器の設置・結線・音出しまでの工程を初めて通しで試験。少し広めのこの空間で4本のBOSEスピーカーとターンテーブルを展開。レコードならではの豊かな低音と空間への広がりを実感し、アナログ音楽が空間にもたらす体験の質を改めて確認できた、記念すべき第一回セッション。" } },
       { caption: "seek - 01", src: "/images/IMG_6074.jpeg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
       { caption: "seek - 02", src: "/images/IMG_6077.jpeg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
-      { caption: "seek - 03", src: "/images/S__51757062.jpeg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
-      { caption: "seek - 04", src: "/images/S__51757066.jpeg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
+      { caption: "seek - 03", src: "/images/S__51757062.jpg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
+      { caption: "seek - 04", src: "/images/S__51757066.jpg", venue: { name: "seek.vintage_store", instagram: "https://www.instagram.com/seek.vintage_store/", desc: "藤野のヴィンテージショップ「seek.vintage_store」オープンデイにサウンドシステムを持ち込みDJを実施。くの字型のフロアにスピーカー4本を配置し、オーナーご用意のテーブルにDJセットをセットアップ。普段はスマートフォンで選曲しているオーナーも、レコードの音質と空気感の違いに大変喜んでいただいた。来客者にも好評で、ヴィンテージの空間とアナログ音楽の相性の良さを実感したセッション。" } },
     ],
   },
 ];
- 
+
 // 案件情報
 const CASE_INFO = {
   "A": { role: "電気工事", target: "スナック", scale: "店舗全体（コンセント、照明等）" },
@@ -375,7 +375,7 @@ function nodeSize(n) {
   );
 }
 const MAX_NODE_SIZE = Math.max(...NODES.map(nodeSize));
- 
+
 // ── レコードラベル風スクエア ────────────────────────────────
 function VinylLabel({ size = 96, node, isCenter = false }) {
   const inset = size * 0.07;
@@ -427,7 +427,7 @@ function VinylLabel({ size = 96, node, isCenter = false }) {
     </svg>
   );
 }
- 
+
 export default function PortfolioMindMap() {
   const [selected, setSelected] = useState(null);
   const [showProfile, setShowProfile] = useState(false);
@@ -435,7 +435,7 @@ export default function PortfolioMindMap() {
   const containerRef = useRef(null);
   const [dims, setDims] = useState({ w: 800, h: 600 });
   const [t, setT] = useState(0);
- 
+
   useEffect(() => {
     function measure() {
       if (containerRef.current) {
@@ -449,7 +449,7 @@ export default function PortfolioMindMap() {
     window.addEventListener("resize", measure);
     return () => window.removeEventListener("resize", measure);
   }, []);
- 
+
   // 四角と線を同期させてゆらゆら動かすためのタイムループ
   useEffect(() => {
     let raf;
@@ -461,11 +461,11 @@ export default function PortfolioMindMap() {
     raf = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(raf);
   }, []);
- 
+
   const cx = dims.w / 2;
   const cy = dims.h / 2;
   const radius = Math.min(dims.w, dims.h) * 0.5;
- 
+
   function nodePos(angle, sz) {
     const rad = (angle * Math.PI) / 180;
     const r = Math.max(
@@ -481,7 +481,7 @@ export default function PortfolioMindMap() {
     );
     return { x, y };
   }
- 
+
   // ノードごとに異なる周期・位相でゆらぎを計算（線と四角で共通利用）
   function wobble(i) {
     const freq = 0.06 + (i % 4) * 0.018;
@@ -492,9 +492,9 @@ export default function PortfolioMindMap() {
       1 + Math.sin(t * freq * 1.3 * 2 * Math.PI + phase * 0.7) * 0.07;
     return { dx, dy, scale };
   }
- 
+
   const activeNode = NODES.find((n) => n.id === selected);
- 
+
   return (
     <div
       style={{
@@ -543,7 +543,7 @@ export default function PortfolioMindMap() {
             {CENTER_CODE}
           </div>
         </div>
- 
+
         <svg
           width={dims.w}
           height={dims.h}
@@ -565,9 +565,9 @@ export default function PortfolioMindMap() {
               />
             );
           })}
- 
+
         </svg>
- 
+
         <button
           onClick={() => setShowProfile(true)}
           style={{
@@ -600,7 +600,7 @@ export default function PortfolioMindMap() {
             {CENTER_LABEL}
           </span>
         </button>
- 
+
         {NODES.map((n, i) => {
           const p = nodePos(n.angle, nodeSize(n));
           const { dx, dy, scale } = wobble(i);
@@ -671,7 +671,7 @@ export default function PortfolioMindMap() {
             </button>
           );
         })}
- 
+
         <div
           style={{
             position: "absolute",
@@ -687,7 +687,7 @@ export default function PortfolioMindMap() {
           項目をタップしてポートフォリオを見る
         </div>
       </div>
- 
+
       {/* ── 拡大ビュー ───────────────────────────────────── */}
       {activeNode && (
         <div
@@ -706,7 +706,7 @@ export default function PortfolioMindMap() {
           <style>{`
             @keyframes fadeIn { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: scale(1); } }
           `}</style>
- 
+
           <div
             style={{
               display: "flex",
@@ -757,7 +757,7 @@ export default function PortfolioMindMap() {
               </div>
             </div>
           </div>
- 
+
           <div
             style={{
               flex: 1,
@@ -782,19 +782,40 @@ export default function PortfolioMindMap() {
                 flexDirection: "column",
                 gap: 10,
                 position: "relative",
-                overflow: "hidden",
               }}
             >
               {activeNode.photos[photoIndex].venue ? (
-                // ── 会場情報付き写真：横並びレイアウト ──
-                <div style={{ display: "flex", flexDirection: "row", width: "100%", height: "100%", gap: 0 }}>
+                // ── 会場情報付き写真：中央寄せ横並びレイアウト ──
+                <div style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  width: "100%",
+                  height: "100%",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 12,
+                  padding: "12px 10px",
+                  boxSizing: "border-box",
+                }}>
                   <img
                     src={activeNode.photos[photoIndex].src}
                     alt={activeNode.photos[photoIndex].caption}
-                    style={{ width: "55%", height: "100%", objectFit: "cover", flexShrink: 0 }}
+                    style={{
+                      width: "48%",
+                      maxHeight: "100%",
+                      objectFit: "contain",
+                      flexShrink: 0,
+                    }}
                   />
-                  <div style={{ flex: 1, padding: "14px 12px", display: "flex", flexDirection: "column", gap: 10, overflowY: "auto" }}>
-                    <div style={{ fontSize: 9, letterSpacing: 1, color: "#9a9484" }}>VENUE</div>
+                  <div style={{
+                    flex: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 8,
+                    overflowY: "auto",
+                    maxHeight: "100%",
+                  }}>
+                    <div style={{ fontSize: 8.5, letterSpacing: 1, color: "#9a9484" }}>VENUE</div>
                     <div style={{ fontSize: 10, fontWeight: 700, lineHeight: 1.5, color: INK }}>
                       {activeNode.photos[photoIndex].venue.name}
                     </div>
@@ -929,7 +950,7 @@ export default function PortfolioMindMap() {
                   </span>
                 </>
               )}
- 
+
               {!activeNode.type && (
                 <div
                   style={{
@@ -948,7 +969,7 @@ export default function PortfolioMindMap() {
                 </div>
               )}
             </div>
- 
+
             {/* 案件情報（電気工事のみ、写真の下に表示） */}
             {activeNode.id === "electric" && (() => {
               const match = activeNode.photos[photoIndex].caption.match(/案件([A-U])/);
@@ -971,7 +992,7 @@ export default function PortfolioMindMap() {
                 </div>
               ) : null;
             })()}
- 
+
             <div style={{ display: "flex", gap: 10 }}>
               {activeNode.photos.map((p, i) => (
                 <button
@@ -989,14 +1010,14 @@ export default function PortfolioMindMap() {
                 />
               ))}
             </div>
- 
+
             <div
               style={{ fontSize: 10.5, color: "#9a9484", letterSpacing: 1 }}
             >
               {String(photoIndex + 1).padStart(2, "0")} /{" "}
               {String(activeNode.photos.length).padStart(2, "0")}
             </div>
- 
+
             <div
               style={{
                 fontSize: 10,
@@ -1096,10 +1117,10 @@ export default function PortfolioMindMap() {
               </div>
             </div>
           </div>
- 
+
           {/* コンテンツ */}
           <div style={{ padding: "28px 24px 48px", display: "flex", flexDirection: "column", gap: 32 }}>
- 
+
             {/* 自己紹介 */}
             <section>
               <div style={{ fontSize: 8.5, letterSpacing: 2, color: "#9a9484", marginBottom: 10 }}>PROFILE</div>
@@ -1111,20 +1132,20 @@ export default function PortfolioMindMap() {
                 電気工事業界に15年以上携わり、2016年に水谷内装電気として独立。第一種電気工事士・2級施工管理技士の資格を持ち、飲食店・クリニック・アパレル店舗・住宅など多様な空間の電気工事を手がける。現在は大学で空間デザインを学びながら、電気・ICT・デザインの3領域を統合した「電気環境計画」という独自の専門領域を開拓中。
               </div>
             </section>
- 
+
             <div style={{ borderTop: `0.5px solid ${RING}`, opacity: 0.3 }} />
- 
+
             {/* 事業内容 */}
             <section>
               <div style={{ fontSize: 8.5, letterSpacing: 2, color: "#9a9484", marginBottom: 14 }}>BUSINESS</div>
- 
+
               <div style={{ marginBottom: 18 }}>
                 <div style={{ fontSize: 11, fontWeight: 700, marginBottom: 6 }}>水谷内装電気</div>
                 <div style={{ fontSize: 10.5, lineHeight: 1.9, color: INK }}>
                   神奈川県認定の登録電気工事業者として、飲食店・クリニック・居酒屋・アパレル店舗・住宅など多様な空間の電気工事を、墨出しから配線・器具付・検査まで一貫して担当。施主のコンセプトに合わせた照明計画では、光の位置・色・明るさ・影・見せる器具・見せない器具をトータルにデザインし、空間の質を底上げする。
                 </div>
               </div>
- 
+
               <div style={{ marginBottom: 18 }}>
                 <div style={{ fontSize: 11, fontWeight: 700, marginBottom: 6 }}>電気環境計画</div>
                 <div style={{ fontSize: 10.5, lineHeight: 1.9, color: INK, marginBottom: 12 }}>
@@ -1142,9 +1163,9 @@ export default function PortfolioMindMap() {
                 ))}
               </div>
             </section>
- 
+
             <div style={{ borderTop: `0.5px solid ${RING}`, opacity: 0.3 }} />
- 
+
             {/* リンク */}
             <section>
               <div style={{ fontSize: 8.5, letterSpacing: 2, color: "#9a9484", marginBottom: 14 }}>LINKS</div>
@@ -1177,9 +1198,9 @@ export default function PortfolioMindMap() {
                 ))}
               </div>
             </section>
- 
+
             <div style={{ borderTop: `0.5px solid ${RING}`, opacity: 0.3 }} />
- 
+
             {/* 問い合わせ */}
             <section>
               <div style={{ fontSize: 8.5, letterSpacing: 2, color: "#9a9484", marginBottom: 14 }}>CONTACT</div>
@@ -1199,23 +1220,10 @@ export default function PortfolioMindMap() {
                 denkikankyokeikaku.hm@gmail.com
               </a>
             </section>
- 
+
           </div>
         </div>
       )}
     </div>
   );
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
