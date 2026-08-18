@@ -1,6 +1,3 @@
-
-
-Portfoliomindmap v13 · JSX
 import { useState, useRef, useEffect } from "react";
  
 // ── トークン ──────────────────────────────────────────────
